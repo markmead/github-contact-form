@@ -6,7 +6,7 @@ Add a contact form to your website that creates a GitHub issue when submitted.
 
 ## Usage
 
-### Install
+### Installation
 
 You need to install Octokit in your project. This is not handled by the package as Octokit is quite large and I didn't want to assume you aren't already using it.
 

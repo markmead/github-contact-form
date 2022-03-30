@@ -1,6 +1,6 @@
 {
   "name": "gh-contact-form",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Add a contact form to your website that creates a GitHub issue when submitted.",
   "main": "dist/index.js",
   "scripts": {

@@ -6,7 +6,7 @@ Add a contact form to your website that creates a GitHub issue when submitted.
 
 ## Usage
 
-### Installation
+### Installation
 
 You need to install Octokit in your project. This is not handled by the package as Octokit is quite large and I didn't want to assume you aren't already using it.
 
@@ -69,7 +69,7 @@ function createGitHubIssue() {
 
 Once submitted this will create a new GitHub issue in the GitHub repository passed as `repo`.
 
-## Private Issues
+## Private Issues
 
 If the GitHub repository is private then you're fine.
 

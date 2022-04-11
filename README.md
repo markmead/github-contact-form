@@ -69,6 +69,27 @@ function createGitHubIssue() {
 
 Once submitted this will create a new GitHub issue in the GitHub repository passed as `repo`.
 
+## Spam Prevention
+
+If you want to prevent spam (recommended) then you can so like this.
+
+```html
+<input type="hidden" id="spamField" />
+```
+
+```js
+async function createGitHubIssue() {
+  const spamValue = document.getElementById("spamField").value;
+
+  const response = await contactForm.sendMessage({
+    // ...
+    spam: spamValue,
+  });
+}
+```
+
+If `spam` is detected a GitHub issue will not be created.
+
 ## Private Issues
 
 If the GitHub repository is private then you're fine.

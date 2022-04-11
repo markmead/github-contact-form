@@ -4,7 +4,7 @@ export default class {
   }
 
   async sendMessage(message) {
-    const { owner, repo, title, body } = message;
+    const { owner, repo, title, body, spam } = message;
 
     if (!owner || !repo || !title) {
       return {
@@ -15,6 +15,13 @@ export default class {
           repo: !repo,
           title: !title,
         },
+      };
+    }
+
+    if (spam) {
+      return {
+        status: 422,
+        message: "Spam detected",
       };
     }
 

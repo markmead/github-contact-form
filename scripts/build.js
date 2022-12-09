@@ -1,7 +1,8 @@
 buildPlugin({
   entryPoints: ['src/index.js'],
   outfile: 'dist/index.js',
-  platform: 'node',
+  platform: 'neutral',
+  mainFields: ['main', 'module'],
 })
 
 function buildPlugin(buildOptions) {

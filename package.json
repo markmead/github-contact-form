@@ -1,14 +1,19 @@
 {
   "name": "gh-contact-form",
-  "version": "1.0.4",
-  "description": "Add a contact form to your website that creates a GitHub issue when submitted.",
+  "version": "1.0.5",
+  "description": "Add a contact form to your website that creates a GitHub issue when submitted 📨",
+  "keywords": [
+    "Contact Form",
+    "JavaScript Contact Form",
+    "Static Contact Form",
+    "JavaScript Form",
+    "Static form"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "node scripts/build.js"
   },
-  "author": "Mark Mead",
-  "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.14.29"
+    "esbuild": "^0.16.2"
   }
 }
